@@ -1,0 +1,192 @@
+:root {
+  /* цвет текста */
+  --text-dark-color: #212121;
+  --text-main-color: #757575;
+  --text-acent-color: #2196f3;
+  --text-white-color: #ffffff;
+  --text-link-footer-color: rgba(255, 255, 255, 0.6);
+  --text-black-color: #000000;
+  /* цвета фона*/
+  --bgc-white-color: #ffffff;
+  --bgc-dark-grey-color: #2f303a;
+  --bgc-light-grey-color: #f5f4fa;
+  /* шрифт */
+}
+
+/* Студия */
+body {
+  color: var(--text-main-color);
+  background-color: var(--bgc-white-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.logo {
+  color: var(--text-acent-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  text-decoration: none;
+}
+
+.logo-part {
+  color: var(--text-black-color);
+}
+
+.link-header {
+  color: var(--text-dark-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+
+.link-header.current {
+  color: var(--text-acent-color);
+}
+
+.contacts {
+  color: var(--text-main-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--text-acent-color);
+}
+
+.hero,
+.footer {
+  background-color: var(--bgc-dark-grey-color);
+}
+
+.hero-title {
+  color: var(--text-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--text-acent-color);
+  color: var(--text-white-color);
+}
+
+.btn-hero {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--text-acent-color);
+  color: var(--text-white-color);
+}
+
+.title {
+  color: var(--text-dark-color);
+}
+
+.advantage-title {
+  color: var(--text-dark-color);
+  font-weight: 700;
+  font-size: 14px; /*браузер перебивает наследие от бади */
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.title-works {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+}
+
+.team {
+  background-color: var(--bgc-light-grey-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team-title-cards {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-list-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.logo-part-footer {
+  color: var(--text-white-color);
+}
+
+.address {
+  color: var(--text-white-color);
+}
+
+.contact-footer {
+  color: var(--text-link-footer-color);
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* Портфолио */
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: inherit;
+  text-align: center;
+  color: var(--text-dark-color);
+}
+
+.portfolio-list {
+  list-style: none;
+}
+
+.portolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-dark-color);
+}
+
+.porfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: inherit;
+}
