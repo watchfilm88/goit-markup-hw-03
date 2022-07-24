@@ -10,7 +10,10 @@
   --bgc-white-color: #ffffff;
   --bgc-dark-grey-color: #2f303a;
   --bgc-light-grey-color: #f5f4fa;
-  /* шрифт */
+  /* отступы */
+  --margin50: 50px;
+  --margin30: 30px;
+  --margin20: 20px;
 }
 
 .list {
@@ -53,6 +56,17 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.site-nav,
+.auth-nav,
+.header-nav,
+.container-flex,
+.advantage-list,
+.work-list,
+.team-list,
+.card-set {
+  display: flex;
 }
 
 body {
@@ -103,10 +117,6 @@ img {
   color: var(--text-black-color);
 }
 
-.site-nav {
-  display: flex;
-}
-
 .site-nav .link {
   display: block;
   padding-top: 32px;
@@ -119,29 +129,23 @@ img {
 }
 
 .site-nav .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: var(--margin50);
 }
 
 .site-nav .current {
   color: var(--text-acent-color);
 }
 
-.auth-nav {
-  display: flex;
-}
-
 .auth-nav .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: var(--margin50);
 }
 
 .header-nav {
-  display: flex;
   margin-right: 331px;
   align-items: center;
 }
 
 .container-flex {
-  display: flex;
   align-items: center;
 }
 
@@ -188,7 +192,7 @@ img {
 
 .btn-hero {
   display: block;
-  margin-top: 30px;
+  margin-top: var(--margin30);
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
@@ -235,12 +239,8 @@ img {
   text-transform: uppercase;
 }
 
-.advantage-list {
-  display: flex;
-}
-
 .advantage-list .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--margin30);
 }
 
 .advantage-list .item {
@@ -254,14 +254,11 @@ img {
 }
 
 .work .title {
-  margin-bottom: 50px;
-}
-.work-list {
-  display: flex;
+  margin-bottom: var(--margin50);
 }
 
 .work-list > .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--margin30);
 }
 
 /* team */
@@ -270,11 +267,7 @@ img {
 }
 
 .team-title {
-  margin-bottom: 50px;
-}
-
-.team-list {
-  display: flex;
+  margin-bottom: var(--margin50);
 }
 
 .team-list > .item {
@@ -303,7 +296,7 @@ img {
 }
 
 .team-list > .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--margin30);
 }
 
 .card-text {
@@ -317,20 +310,17 @@ img {
   padding-bottom: 60px;
 }
 
-.logo-part-footer {
+.logo-part-footer,
+.address {
   color: var(--text-white-color);
 }
 
 .footer .list {
-  margin-top: 20px;
+  margin-top: var(--margin20);
 }
 
 .footer .item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.address {
-  color: var(--text-white-color);
 }
 
 .contact-footer {
@@ -338,7 +328,6 @@ img {
 }
 
 /* Портфолио */
-
 .list-btn {
   display: flex;
   justify-content: center;
@@ -365,20 +354,15 @@ img {
 }
 
 .card-set {
-  display: flex;
   flex-wrap: wrap;
-  margin-left: -20px;
-  margin-top: -20px;
-
-  outline: 1px solid navy;
+  margin-left: calc(-1 * var(--margin20));
+  margin-top: calc(-1 * var(--margin20));
 }
 
 .card-set > .item {
-  flex-basis: calc(100% / 3-20 px);
-  margin-left: 20px;
-  margin-top: 20px;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: var(--margin20);
+  margin-top: var(--margin20);
 
   border: 1px solid #eeeeee;
-
-  outline: 1px solid tomato;
 }
