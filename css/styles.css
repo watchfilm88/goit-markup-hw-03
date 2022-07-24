@@ -77,6 +77,11 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* Студия */
 
 /* Header */
@@ -207,10 +212,6 @@ ul {
 }
 
 /* advantage */
-.advantage {
-  padding-bottom: 0;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -247,6 +248,10 @@ ul {
 }
 
 /* work */
+
+.work {
+  padding-top: 0;
+}
 
 .work .title {
   margin-bottom: 50px;
@@ -302,8 +307,7 @@ ul {
 }
 
 .card-text {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 20px 24px;
 }
 /* footer */
 
@@ -334,7 +338,20 @@ ul {
 }
 
 /* Портфолио */
+
+.list-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.list-btn > .item {
+  margin-right: 8px;
+  margin-bottom: 70px;
+}
+
 .porftolio-title {
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -345,4 +362,23 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: inherit;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-top: -20px;
+
+  outline: 1px solid navy;
+}
+
+.card-set > .item {
+  flex-basis: calc(100% / 3-20 px);
+  margin-left: 20px;
+  margin-top: 20px;
+
+  border: 1px solid #eeeeee;
+
+  outline: 1px solid tomato;
 }
