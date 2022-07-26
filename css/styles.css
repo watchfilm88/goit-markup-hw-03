@@ -33,6 +33,7 @@
 }
 
 .btn {
+  border: none;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -94,6 +95,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 /* Студия */
@@ -104,8 +106,7 @@ img {
 }
 
 .logo {
-  margin-right: 93px;
-
+  margin-bottom: var(--margin20);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -150,6 +151,9 @@ img {
 }
 
 .auth-nav .contacts {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -178,6 +182,11 @@ img {
 }
 
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--margin30);
+
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -196,12 +205,10 @@ img {
 
 .btn-hero {
   display: block;
-  margin-top: var(--margin30);
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
   border-radius: 4px;
 
   font-weight: 700;
@@ -303,24 +310,26 @@ img {
   margin-right: var(--margin30);
 }
 
-.card-text {
-  padding: 20px 24px;
+.team-card-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 /* footer */
 
 .footer {
-  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: var(--margin20);
 }
 
 .logo-part-footer,
 .address {
   color: var(--text-white-color);
-}
-
-.footer .list {
-  margin-top: var(--margin20);
 }
 
 .footer .item:not(:last-child) {
@@ -335,11 +344,15 @@ img {
 .list-btn {
   display: flex;
   justify-content: center;
+  margin-bottom: var(--margin50);
 }
 
-.list-btn > .item {
+.list-btn > .item:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 70px;
+}
+
+.porftolio .btn {
+  padding: 6px 22px;
 }
 
 .porftolio-title {
@@ -367,6 +380,13 @@ img {
   flex-basis: calc(100% / 3 - var(--margin30));
   margin-left: var(--margin30);
   margin-top: var(--margin30);
+}
 
-  border: 1px solid #eeeeee;
+.card-set .card-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
